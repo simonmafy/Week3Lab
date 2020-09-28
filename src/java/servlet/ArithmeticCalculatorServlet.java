@@ -57,7 +57,9 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
             String total = "invalid";
             request.setAttribute("result", total);
         }
-       
+            request.setAttribute("first", first);
+            request.setAttribute("second", second);
+
             getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
                
     }
